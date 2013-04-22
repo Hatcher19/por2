@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Order type:</b>
+  <%= @order.order_type %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @order.title %>
+</p>
+
+<p>
+  <b>Due date:</b>
+  <%= @order.due_date %>
+</p>
+
+<p>
+  <b>Print location:</b>
+  <%= @order.print_location %>
+</p>
+
+<p>
+  <b>Print color:</b>
+  <%= @order.print_color %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @order.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

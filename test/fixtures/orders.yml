@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  order_type: false
+  title: MyString
+  due_date: 2013-04-22
+  print_location: false
+  print_color: MyText
+  comments: MyText
+
+two:
+  order_type: false
+  title: MyString
+  due_date: 2013-04-22
+  print_location: false
+  print_color: MyText
+  comments: MyText
