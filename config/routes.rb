@@ -1,7 +1,10 @@
 POR::Application.routes.draw do
+  root :to => 'pages#home'
   get "production/index"
+  get "pages/home"
 
   resources :orders
+
 
 
   # The priority is based upon order of creation:
