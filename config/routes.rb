@@ -1,4 +1,6 @@
 POR::Application.routes.draw do
+  get "production/index"
+
   resources :orders
 
 

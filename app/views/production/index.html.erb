@@ -1,0 +1,13 @@
+<!-- http://localhost:3000/production/index -->
+<% if notice %>
+	<p id="notice"><%= notice %></p> 
+<% end %>
+	<h1>Production</h1>
+<% @orders.each do |order| %>
+	<div class="#">
+		<h3><%= order.title %></h3> 
+		<%= order.due_date %> 
+		<div class="#">
+ 	</div>
+</div>
+<% end %>
