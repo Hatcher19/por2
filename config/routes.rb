@@ -1,4 +1,16 @@
 POR::Application.routes.draw do
+  
+
+
+  resources :products
+
+
+  resources :product_infos
+
+
+  resources :line_items
+
+
   root :to => 'pages#home'
   get "production/index"
   get "pages/home"

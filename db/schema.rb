@@ -11,7 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130422155545) do
+ActiveRecord::Schema.define(:version => 20130425174701) do
+
+  create_table "line_items", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "quantity"
+    t.string   "style"
+    t.string   "color"
+    t.integer  "yxs"
+    t.integer  "ys"
+    t.integer  "ym"
+    t.integer  "yl"
+    t.integer  "yxl"
+    t.integer  "xs"
+    t.integer  "small"
+    t.integer  "medium"
+    t.integer  "large"
+    t.integer  "xl"
+    t.integer  "twoxl"
+    t.integer  "threexl"
+    t.integer  "fourxl"
+  end
 
   create_table "orders", :force => true do |t|
     t.boolean  "order_type"
@@ -22,6 +43,19 @@ ActiveRecord::Schema.define(:version => 20130422155545) do
     t.text     "comments"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+  end
+
+  create_table "product_infos", :force => true do |t|
+    t.integer  "quantity"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "products", :force => true do |t|
+    t.integer  "quantity"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "order_id"
   end
 
 end
